@@ -34,13 +34,13 @@ This project analyzes banking and financial data to identify customer trends, fi
 ## Dashboard Screenshots
 
 ### Excel Dashboard
-![Excel Dashboard](https://github.com/Ash0024/Bank-Analytics-Project/raw/main/Screenshots/Bank_Analytics_Excel_Dashboard.png)
+![Excel Dashboard](https://github.com/Ash0024/Bank-Analytics-Project/raw/main/Screenshots/Bank%20Analytics%20Excel%20Dashboard.png)
 
 ### Power BI Dashboard
-![Power BI Dashboard](https://github.com/Ash0024/Bank-Analytics-Project/raw/main/Screenshots/Bank_Analytics_Power_Bi_Dashboard.png)
+![Power BI Dashboard](https://github.com/Ash0024/Bank-Analytics-Project/raw/main/Screenshots/Bank%20Analytics%20Power%20Bi%20Dashboard.png)
 
 ### Tableau Dashboard
-![Tableau Dashboard](https://github.com/Ash0024/Bank-Analytics-Project/raw/main/Screenshots/Bank_Analytics_Tableau_Dashboard.png)
+![Tableau Dashboard](https://github.com/Ash0024/Bank-Analytics-Project/raw/main/Screenshots/Bank%20Analytics%20Tableau%20Dashboard.png)
 
 ## Key Insights
 - Total loan amount analyzed: **$446M** across **39.72K** customers, averaging **$11.2K** per loan
