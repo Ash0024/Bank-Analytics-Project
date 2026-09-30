@@ -45,13 +45,13 @@ All queries are in the `SQL` folder. The script creates both tables, loads the C
 ## Dashboard Screenshots
 
 ### Excel Dashboard
-![Excel Dashboard](Screenshots/excel_dashboard.png)
+[![Excel Dashboard](https://github.com/Ash0024/Bank-Analytics-Project/raw/main/Screenshots/Bank%20Analytics%20Excel%20Dashboard.png)](/Ash0024/Bank-Analytics-Project/blob/main/Screenshots/Bank%20Analytics%20Excel%20Dashboard.png)
 
 ### Power BI Dashboard
-![Power BI Dashboard](Screenshots/powerbi_dashboard.png)
+[![Power BI Dashboard](https://github.com/Ash0024/Bank-Analytics-Project/raw/main/Screenshots/Bank%20Analytics%20Power%20Bi%20Dashboard.png)](/Ash0024/Bank-Analytics-Project/blob/main/Screenshots/Bank%20Analytics%20Power%20Bi%20Dashboard.png)
 
 ### Tableau Dashboard
-![Tableau Dashboard](Screenshots/tableau_dashboard.png)
+[![Tableau Dashboard](https://github.com/Ash0024/Bank-Analytics-Project/raw/main/Screenshots/Bank%20Analytics%20Tableau%20Dashboard.png)](/Ash0024/Bank-Analytics-Project/blob/main/Screenshots/Bank%20Analytics%20Tableau%20Dashboard.png)
 
 ## Repository Structure
 
