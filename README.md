@@ -1,59 +1,71 @@
-# Bank Analytics Dashboard
+# Bank Loan Analytics Dashboard
 
-## Project Overview
-This project analyzes banking and financial data to identify customer trends, financial performance, and key business insights. Interactive dashboards were created using Power BI, Tableau, and Excel, while SQL was used for data extraction and analysis.
+Analysis of a bank loan portfolio using **MySQL, Tableau, Power BI and Excel**: how loans are distributed, how repayment performs, and which borrower segments carry the most default risk.
+
+**Project type:** Group project
+**Period:** Completed during my Data Analyst internship at Aivariant (Nov 2025 – May 2026)
+
+---
+
+## Dataset
+
+- Publicly available loan dataset, split into two tables: **loan details** (`finance_1`) and **repayment history** (`finance_2`), joined on loan `id`.
+- **39,717 loans**, **$445.6M** total loan value, **51 columns** after consolidation.
+- The cleaned dataset is in the `Dataset` folder.
 
 ## Tools Used
-- SQL
-- Power BI
-- Tableau
-- Microsoft Excel
 
-## Project Objectives
-- Analyze customer and financial data
-- Monitor key performance indicators (KPIs)
-- Identify revenue and business trends
-- Create interactive dashboards for decision-making
-- Present insights through data visualization
+| Tool | Used for |
+|---|---|
+| MySQL | Database setup, CSV import, KPI and breakdown queries |
+| Tableau | Interactive dashboard |
+| Power BI | Dashboard |
+| Excel | Dashboard |
 
-## Key Features
-- Customer analysis dashboard
-- Financial performance tracking
-- Revenue and trend analysis
-- Interactive filters and KPI cards
-- Visual reporting using Power BI, Tableau, and Excel
+## Key Findings
 
-## Files Included
-- SQL Queries
-- Cleaned Dataset
-- Power BI Dashboard
-- Tableau Dashboard
-- Excel Dashboard
-- Project Presentation
+- **Lower-grade loans carry much higher default risk.** Grade D–G loans defaulted at **23.68%**, versus **11.17%** for Grade A–C.
+- **Small share of loans, large share of losses.** Grade D–G loans were **24%** of all loans but **48%** of charged-off value (**$33.0M of $68.1M**).
+- **Verification did not lower default rates.** Loans marked "Verified" defaulted at **16.01%**, higher than "Not Verified" loans at **12.66%**.
+
+**Limitation:** the verification result shows a correlation only. Verification is probably applied more often to riskier borrowers, so it should not be read as verification *causing* more defaults. Testing this would need controls for grade, income and loan amount.
+
+## SQL Analysis
+
+All queries are in the `SQL` folder. The script creates both tables, loads the CSVs and runs 15 queries:
+
+- **KPIs:** total loan applications, total funded amount, total amount received, average interest rate, average DTI
+- **Portfolio health:** loans by loan status
+- **Breakdowns:** by state, grade, home ownership, purpose, verification status, year and month
+- **Joins:** loan details combined with repayment details
+- **Top loans:** ten largest loans
+
+> To run it, change the file paths in the `LOAD DATA INFILE` statements to where your CSV files are saved.
 
 ## Dashboard Screenshots
 
 ### Excel Dashboard
-![Excel Dashboard](https://github.com/Ash0024/Bank-Analytics-Project/raw/main/Screenshots/Bank%20Analytics%20Excel%20Dashboard.png)
+![Excel Dashboard](Screenshots/excel_dashboard.png)
 
 ### Power BI Dashboard
-![Power BI Dashboard](https://github.com/Ash0024/Bank-Analytics-Project/raw/main/Screenshots/Bank%20Analytics%20Power%20Bi%20Dashboard.png)
+![Power BI Dashboard](Screenshots/powerbi_dashboard.png)
 
 ### Tableau Dashboard
-![Tableau Dashboard](https://github.com/Ash0024/Bank-Analytics-Project/raw/main/Screenshots/Bank%20Analytics%20Tableau%20Dashboard.png)
+![Tableau Dashboard](Screenshots/tableau_dashboard.png)
 
-## Key Insights
-- Total loan amount analyzed: **$446M** across **39.72K** customers, averaging **$11.2K** per loan
-- Total payments collected: **$482.70M**
-- Loan volume grew sharply year over year from 2007 through 2011
-- Mid-tier grades (B and C) carry the highest revolving balances compared to other grades
-- Mortgage and Rent home-ownership groups show the highest last payment amounts, well above Own and Other
-- Roughly a **45/55 split** between verified and non-verified loan status
+## Repository Structure
 
-## Project Type
-Group Project
+```
+Dataset/        Cleaned dataset
+SQL/            MySQL script (schema, import, queries)
+Power Bi/       Power BI dashboard file
+Tableau/        Tableau dashboard file
+Presentation/   Project presentation
+Screenshots/    Dashboard images
+```
 
 ## My Contribution
+
 - Data cleaning and preparation
 - SQL query development
 - Dashboard creation and visualization
